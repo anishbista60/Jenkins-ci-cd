@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'anish60/ci_cd'
+      image 'anish60/ci_cd:latest'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
     }
   }
